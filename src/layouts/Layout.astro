@@ -20,8 +20,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "Kynowa"
+  : "Kynowa - IT Consulting & Cloud Solutions | Melbourne, Australia";
 ---
 
 <!doctype html>
@@ -35,22 +35,17 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="Kynowa provides expert IT consulting services in cloud solutions, cybersecurity, and IT infrastructure. Based in Melbourne, Australia, we help businesses secure and optimize their technology landscape."
       canonical={canonicalURL}
-      twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
-        card: "summary_large_image",
-      }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Kynowa - IT Consulting & Cloud Solutions`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Kynowa IT Consulting",
         },
       }}
     />
